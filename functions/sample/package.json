@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "alexa-sdk": "^1.0.7",
+    "voicelabs": "file:./voicelabs-sdk"
+  }
+}

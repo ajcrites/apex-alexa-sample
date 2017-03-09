@@ -1,0 +1,12 @@
+{
+  "name": "sample",
+  "description": "",
+  "memory": 128,
+  "timeout": 5,
+  "handler": "lib.default",
+  "hooks": {
+    "build": "yarn install --production && ../../node_modules/.bin/webpack --config ../../webpack.config.js --bail",
+    "clean": "rm -rf lib node_modules"
+  },
+  "runtime": "nodejs4.3"
+}
