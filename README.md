@@ -8,7 +8,14 @@ Alexa project backed by lambda and deployed by apex.
 * [`apex`](http://apex.run)
 * [`yarn`](https://yarnpkg.com/en/)
 
-Run `yarn install` to install development dependencies.
+Run `yarn install` (or `npm install`) to install development
+dependencies.
+
+We are using a version of the VoiceLabs SDK that has not
+been published so you must download it here:
+https://s3-us-west-1.amazonaws.com/voicelabs/static/voicelabs-sdk.zip
+
+Unzip it and move it to `functions/sample`.
 
 ## Deployment
 Update `project.json` to add an appropriate IAM role for
