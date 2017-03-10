@@ -1,0 +1,19 @@
+{
+  "intents": [{
+    "intent": "HelloIntent"
+  }, {
+    "intent": "AMAZON.HelpIntent"
+  }, {
+    "intent": "AMAZON.StopIntent"
+  }, {
+    "intent": "AMAZON.CancelIntent"
+  }, {
+    "intent": "GreetByNameIntent",
+    "slots": [{
+      "name": "name",
+      "type": "NAMES"
+    }]
+  },{
+    "intent": "GetQuestionIntent"
+  }]
+}

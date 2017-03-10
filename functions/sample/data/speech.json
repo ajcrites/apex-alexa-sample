@@ -1,5 +1,9 @@
 {
     "HELLO": {
-        "speech": "Hello"
+        "speech": "Hello{{#returning}}, welcome back{{/returning}}"
+    },
+    "GREETING": {
+        "speech": "Greetings, {{name}}. How are you?",
+        "error": "Sorry, I couldn't get your name."
     }
 }

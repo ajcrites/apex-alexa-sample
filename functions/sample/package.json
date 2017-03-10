@@ -1,6 +1,9 @@
 {
   "dependencies": {
     "alexa-sdk": "^1.0.7",
+    "lodash.get": "^4.4.2",
+    "mustache": "^2.3.0",
+    "node-fetch": "^1.6.3",
     "voicelabs": "file:./voicelabs-sdk"
   }
 }

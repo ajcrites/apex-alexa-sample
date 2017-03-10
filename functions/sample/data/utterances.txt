@@ -1,0 +1,5 @@
+HelloIntent Hello
+
+GreetByNameIntent my name is {name}
+
+GetQuestionIntent ask a question
