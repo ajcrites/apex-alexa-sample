@@ -2,7 +2,6 @@ import voicelabsSdk from "voicelabs";
 import { render } from "mustache";
 import get from "lodash.get";
 
-import { getQuestion } from "../questions.es6";
 import { HELLO, GREETING } from "../../data/speech";
 
 // Track events using Voicelabs: http://voicelabs.co/
@@ -28,12 +27,6 @@ export const handler = {
 
         await VoiceLabs.track(this.event.session, this.event.request.intent.name, null, speech),
         this.emit(":tell", speech);
-    },
-
-    async GetQuestionIntent() {
-        const question = await getQuestion();
-        await VoiceLabs.track(this.event.session, this.event.request.intent.name, null, question),
-        this.emit(":ask", question);
     },
 
     async GreetByNameIntent() {
